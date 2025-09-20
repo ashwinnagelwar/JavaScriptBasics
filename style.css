@@ -1,0 +1,109 @@
+/* style.css */
+body {
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.counter-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.counter-input {
+    width: 80px;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    background: #f9f9f9;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px 0;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn.decrement {
+    background: #dc3545;
+}
+
+.btn.reset {
+    background: #6c757d;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+body {
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.board-container {
+    width: 200px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.color-board {
+    width: 100px;
+    height: 100px;
+    background: #3498db;
+    border-radius: 8px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: background 0.3s;
+}
+
+.color-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background: #2ecc71;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.color-btn:hover {
+    background: #27ae60;
+}
+
+.container {
+    color: green;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.card {
+    width: 70px;
+    height: 80px;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 36px;
+}
