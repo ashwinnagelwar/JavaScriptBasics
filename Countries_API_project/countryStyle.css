@@ -1,0 +1,153 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fafafa;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 48px 16px 48px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.dark-mode-toggle {
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+main {
+  padding: 0 48px;
+}
+
+.back-btn {
+  margin: 32px 0 32px 0;
+  padding: 8px 32px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  transition: background 0.2s;
+}
+
+.back-btn:hover {
+  background: #f3f3f3;
+}
+
+.details-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 64px;
+  margin-top: 16px;
+}
+
+.flag-section {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flag-img {
+  width: 420px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  border-radius: 8px;
+  background: #eee;
+}
+
+.info-section {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 24px 0;
+}
+
+.info-columns {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 32px;
+}
+
+.info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.border-countries {
+  margin-top: 24px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.border-btn {
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 4px 18px;
+  margin-left: 8px;
+  font-size: 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.border-btn:hover {
+  background: #f3f3f3;
+}
+
+@media (max-width: 900px) {
+  .details-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .flag-section {
+    justify-content: center;
+  }
+  main {
+    padding: 0 16px;
+  }
+  header {
+    padding: 24px 16px 12px 16px;
+  }
+}
+
+body.dark-mode {
+  background: #202c37;
+  color: #fff;
+}
+
+body.dark-mode .header-container,
+body.dark-mode .countries-container {
+  background: #2b3945;
+  color: #fff;
+}
+
+body.dark-mode .dark-mode-toggle {
+  background: #2b3945;
+  color: #fff;
+}
